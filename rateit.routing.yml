@@ -1,0 +1,7 @@
+rateit.content:
+  path: '/rateit'
+  defaults:
+    _form: '\Drupal\rateit\Form\RateItForm'
+    _title: 'Rate It'
+  requirements:
+    _permission: 'access content'

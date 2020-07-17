@@ -1,0 +1,2 @@
+This modules will 
+1. Create a block with a form and place it on the sidebar section of the website. The form should have 2 fields : Name(Textfield) and Feedback(Radio Button from 1 to 5). For every submit store the following information in custom table: Name and Rating. Make sure custom table is created when module is installed.

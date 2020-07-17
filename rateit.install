@@ -1,0 +1,35 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function rateit_schema() {
+    $schema['rateit'] = array(
+    'description' => 'Stores Name and Feedback rating from the form.',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for the record.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+
+      'name' => array(
+        'description' => 'User\'s Name.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => 'user',
+      ),
+
+      'rating' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Rating entered by user',
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}
